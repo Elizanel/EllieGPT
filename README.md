@@ -20,10 +20,6 @@ Ellie can switch between four distinct personalities:
 
 Switch anytime using: /mode 
 
-<img width="1223" height="393" alt="Screenshot 2025-12-09 at 3 52 52 PM" src="https://github.com/user-attachments/assets/7559d950-d9ec-46de-9604-41d2dfb5a869" />
-<img width="1237" height="275" alt="Screenshot 2025-12-09 at 3 51 59 PM" src="https://github.com/user-attachments/assets/1185c2f0-af81-4f40-bb9c-7d5f7105224c" />
-<img width="483" height="211" alt="Screenshot 2025-12-09 at 3 51 15 PM" src="https://github.com/user-attachments/assets/18f8d695-4370-499e-ab51-ca1de2256dd2" />
-
 ---
 
 ### 🧠 Tool-Calling Agent (LangGraph)
@@ -107,3 +103,15 @@ Ellie-GPT/
 	•	OpenAI API
 	•	uv package manager
 	•	ddgs (DuckDuckGo search)
+
+## 📸 Screenshots
+<img width="483" height="211" alt="Screenshot 2025-12-09 at 3 51 15 PM" src="https://github.com/user-attachments/assets/af3152df-8db9-41ba-a5ea-0029c980eb51" />
+
+<img width="1237" height="275" alt="Screenshot 2025-12-09 at 3 51 59 PM" src="https://github.com/user-attachments/assets/edc3a399-9e5c-44b5-919d-79d143e14071" />
+
+<img width="1223" height="393" alt="Screenshot 2025-12-09 at 3 52 52 PM" src="https://github.com/user-attachments/assets/1f17aab2-32fe-45e0-b36e-eb5bb2439630" />
+
+
+
+
+
