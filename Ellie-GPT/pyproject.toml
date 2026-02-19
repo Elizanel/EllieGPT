@@ -1,15 +1,72 @@
+
+# PROJECT METADATA
+
 [project]
+
+# This is the name of my package / project.
+# If I ever publish it to PyPI, this is what it would be called.
 name = "ellie-gpt"
+
+# Current project version.
+# 0.1.0 usually means early development / MVP stage.
 version = "0.1.0"
+
+# Short description (I should actually update this to something real).
 description = "Add your description here"
+
+# This tells package tools that README.md contains my project documentation.
 readme = "README.md"
+
+# I am explicitly requiring Python 3.12 or higher.
+# This matters because some dependencies behave differently across versions.
 requires-python = ">=3.12"
+
+
+# ----------------------------
+# DIRECT DEPENDENCIES
+# ----------------------------
+# These are the packages I explicitly chose.
+# Everything else in uv.lock comes indirectly from these.
+
 dependencies = [
+
+    # ddgs = lightweight DuckDuckGo search wrapper.
+    # I use this inside my web_search tool.
+    # This allows real-time internet querying.
     "ddgs>=9.9.3",
+
+    # duckduckgo-search = alternative DuckDuckGo library.
+    # (I may not actually need both this AND ddgs — possible cleanup opportunity.)
     "duckduckgo-search>=8.1.1",
+
+    # langchain = framework that helps structure LLM apps.
+    # Gives me:
+    # - message abstractions
+    # - tool registration
+    # - prompt handling
+    # - memory systems
+    # - output parsing
+    # This is a big dependency and pulls in many transitive packages.
     "langchain>=1.1.3",
+
+    # langchain-openai = bridge between LangChain and OpenAI models.
+    # It wraps OpenAI SDK so LangChain can call models cleanly.
+    # This internally installs openai + httpx + pydantic + async tooling.
     "langchain-openai>=1.1.1",
+
+    # langgraph = orchestration layer for agents.
+    # This lets me build ReAct-style agents with tool use.
+    # It builds on top of LangChain.
     "langgraph>=1.0.4",
+
+    # openai = official OpenAI SDK.
+    # NOTE: I might not need this explicitly
+    # because langchain-openai already installs it.
+    # If I’m not using OpenAI directly outside LangChain,
+    # I could potentially remove this.
     "openai>=2.9.0",
+
+    # python-dotenv = loads environment variables from .env file.
+    # Keeps my API key out of the codebase.
     "python-dotenv>=1.2.1",
 ]
