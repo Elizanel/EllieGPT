@@ -1,3 +1,9 @@
+# what is this? 
+#	•	Freezes exact dependency versions (and where they came from)
+#	•	Makes installs reproducible across machines/CI
+#	•	Stores hashes + wheel/SDist URLs so you get the same artifacts every time
+#	•	Supports multiple environments (different Python versions / platforms) in one file
+
 version = 1
 revision = 3
 requires-python = ">=3.12"
